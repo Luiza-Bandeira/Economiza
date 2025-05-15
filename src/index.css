@@ -1,0 +1,73 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 215 79% 20%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 215 60% 34%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 330 80% 33%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 330 80% 33%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold; /* Alterado para font-sans para corresponder à imagem */
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-highlight;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
+
+.whatsapp-button {
+  @apply fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:bg-green-600 transition-colors duration-300;
+}
+
+.nav-link {
+  @apply relative text-economiza-azul-escuro hover:text-economiza-vinho transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-economiza-vinho after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full;
+}
+
+.nav-link.active {
+  @apply text-economiza-vinho after:w-full;
+}
