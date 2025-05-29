@@ -88,15 +88,7 @@ const Footer: React.FC = () => {
                 </a>
               </p>
               <p>
-                <a 
-                  href="tel:+553186460883" 
-                  className="hover:text-economiza-rosa transition-colors"
-                >
-                  (31) 8646-0883
-                </a>
-              </p>
-            </address>
-          </div>
+                
         </div>
         
         <div className="border-t border-economiza-azul-medio mt-8 pt-8 text-center text-sm">
