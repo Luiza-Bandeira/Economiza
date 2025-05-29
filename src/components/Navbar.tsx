@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -46,7 +45,7 @@ const Navbar: React.FC = () => {
     <header 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white py-4" // Mudado de bg-transparent para bg-white
+        isScrolled ? "bg-white shadow-md py-2" : "bg-white py-4"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -89,12 +88,7 @@ const Navbar: React.FC = () => {
           >
             Serviços
           </Link>
-          <Link 
-            to="/contato" 
-            className={cn("nav-link font-sans font-medium", activePath === "/contato" && "active")}
-          >
-            Contato
-          </Link>
+          {/* Aba "Contato" removida aqui */}
           <Link to="#!" onClick={(e) => {
             e.preventDefault();
             document.dispatchEvent(new CustomEvent('openAgendaPopup'));
@@ -132,13 +126,7 @@ const Navbar: React.FC = () => {
             >
               Serviços
             </Link>
-            <Link 
-              to="/contato" 
-              className={cn("nav-link text-center text-xl font-sans font-medium", activePath === "/contato" && "active")}
-              onClick={closeMenu}
-            >
-              Contato
-            </Link>
+            {/* Aba "Contato" removida aqui */}
             <div className="pt-4">
               <Link 
                 to="#!" 
