@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Mail, Phone } from 'lucide-react';
@@ -87,8 +86,8 @@ const Footer: React.FC = () => {
                   luizamariellybc@gmail.com
                 </a>
               </p>
-              <p>
-                
+            </address>
+          </div>
         </div>
         
         <div className="border-t border-economiza-azul-medio mt-8 pt-8 text-center text-sm">
