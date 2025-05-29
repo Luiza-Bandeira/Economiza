@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                 }}
                 className="hover:text-economiza-rosa transition-colors"
               >
-                Agende uma consulta
+                Agende sua Sessão Gratuita
               </a>
             </nav>
           </div>
